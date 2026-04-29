@@ -32,7 +32,12 @@ const eventSchema = new mongoose.Schema({
     },
     tags: [{
         type: String
-    }]
+    }],
+    trending_badge: {
+        type: String,
+        enum: ['None', 'Trending', 'Hyped'],
+        default: 'None'
+    }
 }, {
     timestamps: true
 });

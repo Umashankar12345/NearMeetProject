@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const eventRoutes = require('./routes/events');
 const aiRoutes = require('./routes/ai');
+const commentRoutes = require('./routes/comments');
 
 // Load env vars
 dotenv.config();
@@ -26,6 +27,7 @@ app.use(cors());
 app.use('/auth', authRoutes);
 app.use('/events', eventRoutes);
 app.use('/ai', aiRoutes);
+app.use('/comments', commentRoutes);
 
 const PORT = process.env.PORT || 5000;
 
