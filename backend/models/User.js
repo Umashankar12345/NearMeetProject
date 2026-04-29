@@ -13,7 +13,14 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    saved_events: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Event'
+    }],
+    category_preferences: [{
+        type: String
+    }]
 }, {
     timestamps: true
 });

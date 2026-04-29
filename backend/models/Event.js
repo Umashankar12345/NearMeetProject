@@ -29,7 +29,10 @@ const eventSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true
-    }
+    },
+    tags: [{
+        type: String
+    }]
 }, {
     timestamps: true
 });
