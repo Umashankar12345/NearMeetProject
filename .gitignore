@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+backend/node_modules/
+.env
+
+# Android/IntelliJ
+.idea/
+.gradle/
+build/
+local.properties
+*.iml
+.cxx/
