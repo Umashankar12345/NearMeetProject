@@ -32,3 +32,11 @@ data class UserData(
     val name: String,
     val email: String
 )
+
+data class EventCreateRequest(
+    val title: String,
+    val description: String,
+    val latitude: Double,
+    val longitude: Double,
+    val date_time: String
+)

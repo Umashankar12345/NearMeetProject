@@ -10,3 +10,14 @@ build/
 local.properties
 *.iml
 .cxx/
+
+# Android SDK folders / tooling downloaded locally
+build-tools/
+emulator/
+licenses/
+platform-tools/
+platforms/
+skins/
+sources/
+.knownPackages
+
